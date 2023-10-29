@@ -41,6 +41,7 @@ const email=props.email
     console.log("axios")
     try{
       console.log(email)
+      console.log("enterd")
         const response=await axios.post("http://localhost:5000/api/user/add",{email,data:props.movie})
         
     }
