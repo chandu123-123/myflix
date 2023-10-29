@@ -22,7 +22,7 @@ export default function Login() {
       // localStorage.setItem("user","signed")
       navigate("/");
     } catch (e) {
-      alert("email is wrong");
+      alert("create user");
       console.log(e.message);
     }
   };
