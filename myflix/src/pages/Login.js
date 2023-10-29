@@ -23,7 +23,7 @@ export default function Login() {
       navigate("/");
     } catch (e) {
       alert("email is wrong");
-      console.log(e);
+      console.log(e.message);
     }
   };
   const handleInputChange = (e) => {
@@ -108,7 +108,7 @@ const Conatiner = styled.div`
       width:60%;
       @media (max-width:760px){
         grid-template-columns: ${({ showpassword }) =>
-        showpassword ? "2fr 1fr" : "2fr 1fr"};
+          showpassword ? "2fr 1fr" : "2fr 1fr"};
       }
       input{
         @media (max-width:768px){

@@ -16,13 +16,13 @@ export default function Signup() {
     const { email, password } = formvalues;
     try {
       if (password === "") {
-        return alert("something wrong");
+        return alert("enter password");
       }
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
      localStorage.setItem("user","signed")
       navigate("/");
     } catch (e) {
-      alert("email is wrong");
+      alert("password min 7 letters");
       console.log(e);
     }
   };
