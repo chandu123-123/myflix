@@ -9,7 +9,7 @@ app.use(express.json());
 
 const mongo_url = process.env.MONGO_URL;
 
-mongoose.connect(mongo_url).then(() => {
+mongoose.connect("mongodb+srv://chandan:chandussr@cluster0.iiarwea.mongodb.net/netflix?retryWrites=true&w=majority").then(() => {
   console.log("Connected to MongoDB");
 });
 
