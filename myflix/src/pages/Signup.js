@@ -12,7 +12,7 @@ export default function Signup() {
   });
   const navigate = useNavigate();
   const submit = async () => {
-    console.log(formvalues);
+ 
     const { email, password } = formvalues;
     try {
       if (password === "") {
